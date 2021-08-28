@@ -1,0 +1,45 @@
+.nav {
+  display: block;
+  background: var(--c-dark);
+  transform: translateY(85px);
+  width: 200px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    @media screen and (min-width: $xxlarge) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    padding: 5px;
+
+    &:hover {
+      background: var(--c-orange);
+
+      @media screen and (min-width: $xxlarge) {
+        background: inherit;
+        border-bottom: 3px solid var(--c-white);
+      }
+    }
+
+    @media screen and (min-width: $xxlarge) {
+      padding: 0 30px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--c-white);
+  }
+
+  @media screen and (min-width: $xxlarge) {
+    transform: initial;
+    width: inherit;
+  }
+}

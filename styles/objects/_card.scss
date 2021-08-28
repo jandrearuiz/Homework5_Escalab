@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 25%;
+
+  &__logo {
+    width: 20%;
+    align-self: flex-end;
+  }
+
+  &__product {
+    width: 50%;
+  }
+}

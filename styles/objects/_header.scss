@@ -1,0 +1,17 @@
+.header {
+  background: var(--c-dark);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 25%;
+    padding: 4%;
+
+    @media screen and (min-width: $xxlarge) {
+      width: 10%;
+      padding: 1%;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.menu {
+  color: var(--c-white);
+
+  &__input {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 48px;
+    height: 48px;
+    opacity: 0;
+
+    @media screen and (min-width: $xxlarge) {
+      display: none;
+    }
+  }
+
+  & input:checked ~ nav {
+    display: block;
+  }
+
+  & input:checked ~ .fa-bars {
+    display: none;
+  }
+
+  & input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+  & nav {
+    display: none;
+
+    @media screen and (min-width: $xxlarge) {
+      display: block;
+      margin-right: 50px;
+    }
+  }
+}
+
+.fas {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  align-self: center;
+  font-size: 2rem;
+  pointer-events: none;
+
+  @media screen and (min-width: $xxlarge) {
+    display: none;
+  }
+}
+
+
