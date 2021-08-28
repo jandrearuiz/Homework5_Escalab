@@ -10,7 +10,22 @@
     width: 25%;
     padding: 4%;
 
-    @media screen and (min-width: $xxlarge) {
+    @media (min-width: $small) and (max-width: $medium) {
+      width: 20%;
+      padding: 3%;
+    }
+
+    @media (min-width: 769px) and (max-width: $large) {
+      width: 17%;
+      padding: 2%;
+    }
+
+    @media (min-width: 993px) and (max-width: $xxlarge) {
+      width: 15%;
+      padding: 1%;
+    }
+
+    @media (min-width: 1401px) {
       width: 10%;
       padding: 1%;
     }

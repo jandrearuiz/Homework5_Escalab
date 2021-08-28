@@ -1,7 +1,7 @@
 .nav {
   display: block;
   background: var(--c-dark);
-  transform: translateY(85px);
+  transform: translateY(83px);
   width: 200px;
 
   &__list {
@@ -9,7 +9,7 @@
     padding: 0;
     text-align: center;
 
-    @media screen and (min-width: $xxlarge) {
+    @media screen and (min-width: $large) {
       display: flex;
       justify-content: space-around;
     }
@@ -22,13 +22,13 @@
     &:hover {
       background: var(--c-two);
 
-      @media screen and (min-width: $xxlarge) {
+      @media screen and (min-width: $large) {
         background: inherit;
         border-bottom: 3px solid var(--c-white);
       }
     }
 
-    @media screen and (min-width: $xxlarge) {
+    @media screen and (min-width: $large) {
       padding: 25px 30px;
     }
   }
@@ -38,7 +38,7 @@
     color: var(--c-white);
   }
 
-  @media screen and (min-width: $xxlarge) {
+  @media screen and (min-width: $large) {
     transform: initial;
     width: inherit;
   }
