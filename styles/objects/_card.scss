@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 25%;
+  margin: 2%;
+  box-shadow: 2px 2px 5px 5px rgba(211, 211, 211, 0.8);
+  padding-bottom: 3%;
 
   &__logo {
     width: 20%;
@@ -11,6 +13,38 @@
   }
 
   &__product {
-    width: 50%;
+    width: 40%;
+  }
+
+  &__link {
+    margin: 1%;
+    padding: 2% 5%;
+    background: var(--c-orange);
+    border: 2px solid var(--c-orange);
+    width: 65%;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: var(--c-white);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background: var(--c-dark);
+      border: 2px solid var(--c-dark);
+    }
+
+    &:last-child {
+      background: var(--c-white);
+      color: var(--c-four);
+      border: 2px solid var(--c-four);
+      transition: background-color 0.3s ease-in;
+
+      &:hover {
+        background: var(--c-four);
+        color: var(--c-white);
+      }
+    }
   }
 }
