@@ -47,4 +47,13 @@
       }
     }
   }
+
+  &__title {
+    color: var(--c-four);
+    margin: 0;
+  }
+
+  &__price {
+    font-weight: 700;
+  }
 }

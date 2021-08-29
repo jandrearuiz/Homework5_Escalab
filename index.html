@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
     <title>Homework5</title>
     <link
       rel="shortcut icon"
@@ -34,6 +37,10 @@
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link" target="_blank">Productos</a>
+              <ul class="submenu">
+                <li class="submenu__item"><a href="" class="submenu__link">Mujeres</a></li>
+                <li class="submenu__item"><a href="" class="submenu__link">Hombres</a></li>
+              </ul>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link" target="_blank">Contacto</a>
@@ -43,7 +50,14 @@
       </div>
     </header>
     <main class="container">
-      <img class="container__img" src="./assets/fondo.jpg" alt="" />      
+      <picture class="container__img">
+        <source
+          srcset="./assets/fondo3.jpg"
+          class="container__img-img"
+          media="(min-width: 1100px)"
+        />
+        <img class="container__img-img" src="./assets/fondo.jpg" alt="" />
+      </picture>
       <div class="cards">
         <div class="card">
           <img src="./assets/iconnew.png" alt="new" class="card__logo" />

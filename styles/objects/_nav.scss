@@ -18,13 +18,13 @@
   &__item {
     list-style: none;
     padding: 5px;
+    transition: all 0.2s ease-in;
 
     &:hover {
       background: var(--c-two);
 
       @media screen and (min-width: $large) {
         background: inherit;
-        border-bottom: 3px solid var(--c-white);
       }
     }
 
@@ -36,10 +36,49 @@
   &__link {
     text-decoration: none;
     color: var(--c-white);
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: var(--c-two);
+        font-weight: 600;
+    }
   }
 
   @media screen and (min-width: $large) {
     transform: initial;
     width: inherit;
   }
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  width: 200px;
+  transform: translate(-205px, -23px);
+  background: var(--c-dark);
+  padding: 0;
+
+  &__item {
+    list-style: none;
+    padding: 5px;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background: var(--c-two);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    text-align: center;
+    color: var(--c-white);
+  }
+
+  @media screen and (min-width: $large) {
+    transform: translate(-60px, 25px);
+  }
+}
+
+.nav__item:hover .submenu {
+  display: block;
 }
