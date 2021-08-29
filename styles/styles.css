@@ -585,6 +585,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container__img {
@@ -594,6 +597,15 @@ body {
 
 .container__img-img {
   width: 100%;
+}
+
+.container__title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 4rem;
+  color: var(--c-orange);
+  text-shadow: 1px 1px 12px rgba(33, 37, 41, 0.9);
 }
 
 .cards {
